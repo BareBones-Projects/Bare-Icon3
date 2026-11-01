@@ -1,0 +1,10 @@
+# BARE_ICON3 — CRYO ARCHIVE
+.DS_Store
+Thumbs.db
+node_modules/
+dist/
+*.zip
+.cryo-cache/
+.idea/
+.vscode/
+*.log

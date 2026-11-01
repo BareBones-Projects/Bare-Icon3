@@ -1,0 +1,26 @@
+{
+  "pack": "BONES ICON PACKS",
+  "version": "2.0",
+  "codename": "BARE_ICON3",
+  "title": "BARE_ICON3",
+  "tagline": "MINIMAL GLYPH SET — CRYO ARCHIVE ISSUE 003",
+  "banner": {
+    "label": "BONES ICON PACKS v2.0",
+    "note": "STATIC BANNER / 300PX — DOES NOT SCROLL"
+  },
+  "icons": [
+    { "id": "BN-001", "name": "FEMUR",    "glyph": "▲", "spec": "SOLID MARK / 24PX GRID" },
+    { "id": "BN-002", "name": "SKULL",    "glyph": "●", "spec": "ROUND MARK / 24PX GRID" },
+    { "id": "BN-003", "name": "RIBCAGE",  "glyph": "◆", "spec": "DIAMOND MARK / 24PX GRID" },
+    { "id": "BN-004", "name": "VERTEBRA", "glyph": "■", "spec": "BLOCK MARK / 24PX GRID" },
+    { "id": "BN-005", "name": "JOINT",    "glyph": "✚", "spec": "CROSS MARK / 24PX GRID" },
+    { "id": "BN-006", "name": "CLAVICLE", "glyph": "◐", "spec": "HALF MARK / 24PX GRID" },
+    { "id": "BN-007", "name": "PATELLA",  "glyph": "⬡", "spec": "HEX MARK / 24PX GRID" },
+    { "id": "BN-008", "name": "TIBIA",    "glyph": "⌁", "spec": "BOLT MARK / 24PX GRID" },
+    { "id": "BN-009", "name": "ULNA",     "glyph": "⌖", "spec": "SIGHT MARK / 24PX GRID" },
+    { "id": "BN-010", "name": "SACRUM",   "glyph": "⎔", "spec": "SHARD MARK / 24PX GRID" },
+    { "id": "BN-011", "name": "MANDIBLE", "glyph": "⍉", "spec": "RING MARK / 24PX GRID" },
+    { "id": "BN-012", "name": "PHALANX",  "glyph": "◎", "spec": "TARGET MARK / 24PX GRID" }
+  ],
+  "footer": "BARE_ICON3 — BONES ICON PACKS v2.0 — ASSEMBLED OFFLINE"
+}
