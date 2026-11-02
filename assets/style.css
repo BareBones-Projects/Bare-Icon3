@@ -1,0 +1,102 @@
+/* ============================================================
+   BARE_ICON3 — assets/style.css
+   STATUS: LOCKED. GEOMETRY AND COLOR ARE FIXED BY SPEC.
+   BONES ICON PACKS v2.0 / CRYO ARCHIVE ISSUE 003
+   ============================================================ */
+:root {
+  --black: #0A0A0A;
+  --cyan: #00E5FF;
+  --yellow: #FFE600;
+  --ink: #E6F7FA;
+  --dim: #5E7A80;
+  --line: #1D2A2D;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+  background: var(--black);
+  color: var(--ink);
+  font-family: ui-monospace, Menlo, Consolas, monospace;
+  display: grid;
+  grid-template-columns: 300px 1fr 360px; /* 300 STATIC | CENTER SCROLLS | 360 STATIC */
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* LEFT — STATIC BANNER, 300PX. NEVER SCROLLS. */
+.banner {
+  border-right: 1px solid var(--line);
+  padding: 28px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.b-tag {
+  color: var(--yellow);
+  font-size: 11px;
+  letter-spacing: .18em;
+  border: 1px solid var(--yellow);
+  padding: 6px 8px;
+}
+.banner h1 { font-size: 40px; letter-spacing: .02em; color: var(--ink); }
+.b-sub { color: var(--cyan); font-size: 12px; letter-spacing: .14em; }
+.b-rule { height: 1px; background: var(--line); }
+.b-note, .b-count { color: var(--dim); font-size: 11px; letter-spacing: .12em; line-height: 1.7; }
+.b-count span { color: var(--cyan); }
+
+/* CENTER — THE ONLY SCROLLABLE REGION. */
+.stage { overflow-y: auto; }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(128px, 1fr));
+  gap: 1px;
+  background: var(--line);
+  border-bottom: 1px solid var(--line);
+}
+.cell {
+  background: var(--black);
+  border: 0;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  color: var(--ink);
+  font: inherit;
+}
+.cell .glyph { font-size: 34px; color: var(--cyan); }
+.cell .cname { font-size: 11px; letter-spacing: .16em; }
+.cell .cid { font-size: 10px; color: var(--dim); letter-spacing: .12em; }
+.cell:hover .glyph { color: var(--yellow); }
+.cell.active { box-shadow: inset 0 0 0 1px var(--cyan); }
+.cell.active .glyph { color: var(--yellow); }
+.foot { color: var(--dim); font-size: 10px; letter-spacing: .14em; padding: 16px; }
+
+/* RIGHT — STATIC PREVIEW, 360PX. NEVER SCROLLS. */
+.preview {
+  border-left: 1px solid var(--line);
+  padding: 28px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.p-tag { color: var(--cyan); font-size: 11px; letter-spacing: .18em; }
+.preview .big {
+  font-size: 120px;
+  line-height: 1;
+  color: var(--yellow);
+  border: 1px solid var(--line);
+  text-align: center;
+  padding: 24px 0;
+}
+.p-name { font-size: 22px; letter-spacing: .1em; }
+.p-id { color: var(--cyan); font-size: 12px; letter-spacing: .14em; }
+.p-spec { color: var(--dim); font-size: 11px; letter-spacing: .12em; line-height: 1.7; }
+
+@media (max-width: 960px) {
+  body { grid-template-columns: 1fr; height: auto; overflow: visible; }
+  .banner, .preview { border: 0; border-bottom: 1px solid var(--line); }
+  .stage { overflow: visible; }
+}
