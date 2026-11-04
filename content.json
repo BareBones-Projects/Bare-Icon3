@@ -3,6 +3,12 @@
   "version": "2.0",
   "codename": "BARE_ICON3",
   "title": "BARE_ICON3",
+  "creator": "BareBones Projects",
+  "description": "Editable BONES glyph catalog for BARE ICON3. The current exported HTML does not yet load this catalog.",
+  "schemaVersion": 1,
+  "changelog": [
+    { "version": "2.0", "date": "2026-11-04", "note": "Initial catalog metadata for CRYO ARCHIVE ISSUE 003." }
+  ],
   "tagline": "MINIMAL GLYPH SET — CRYO ARCHIVE ISSUE 003",
   "banner": {
     "label": "BONES ICON PACKS v2.0",
