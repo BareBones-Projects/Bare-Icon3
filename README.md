@@ -26,7 +26,8 @@ Alternatively, run `python3 -m http.server 8000` from the repository root.
 
 | Path | Purpose |
 | --- | --- |
-| `index.html` | Default browser entry point for the icon browser |
+| `index.html` | Default browser entry point for the generated icon browser |
+| `catalog.html` | Searchable browser for the maintained `content.json` catalog |
 | `b_index.html` | Preserved original exported artifact; currently identical to `index.html` |
 | `assets/style.css` | Shared stylesheet / project styling source |
 | `content.json` | Human-editable catalog seed and metadata |
@@ -43,7 +44,7 @@ Add catalog entries to the `icons` array in `content.json`. Keep IDs stable and 
 
 Validate JSON after each update with `python3 -m json.tool content.json >/dev/null`. Keep new artwork or source files in a descriptive subdirectory under `assets/`, and update the catalog's version/changelog when a batch is published. Avoid reusing or renumbering existing IDs.
 
-**Current integration note:** `content.json` contains 12 BONES records. The exported HTML artifact currently renders its own generated icon collection and does not load this JSON catalog. Treat the JSON as catalog metadata/source until the browser is wired to consume it; changes to the JSON alone do not update the rendered grid.
+**Catalog browser:** `catalog.html` reads `content.json` at runtime and provides a searchable view of the BONES records. The generated icon browser at `index.html` remains its own collection.
 
 ## Main-site integration
 
