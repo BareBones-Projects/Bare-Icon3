@@ -1,3 +1,5 @@
+<img width="1280" height="640" alt="Bare-Icon3-social-preview" src="https://github.com/user-attachments/assets/515f7b6f-650c-4a8b-b949-dbba1b2be704" />
+
 # BARE ICON3
 
 BARE ICON3 is a static icon browser and a small, editable BONES glyph catalog maintained in `content.json`. The repository is prepared to run as a standalone site and to be embedded or linked from the BareBones main site.
