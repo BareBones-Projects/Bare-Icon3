@@ -1,3 +1,5 @@
+![Bare-Icon3 social preview](assets/social-preview.svg)
+
 <img width="1280" height="640" alt="Bare-Icon3-social-preview" src="https://github.com/user-attachments/assets/515f7b6f-650c-4a8b-b949-dbba1b2be704" />
 
 # BARE ICON3
@@ -55,3 +57,7 @@ The site is static and can be hosted beneath a path or linked from the BareBones
 ## Attribution
 
 Created and maintained by BareBones Projects. Individual icon contributions should be credited in the relevant asset/catalog metadata when contributor details are available.
+
+
+---
+BareBones Projects, Designed by: Justin Levesque-Welsch
